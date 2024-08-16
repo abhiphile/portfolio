@@ -10,8 +10,9 @@ export default defineConfig({
   // If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/<USERNAME>, set base to '/'.
 
   // If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/, for example your repository is at https://github.com/<USERNAME>/<REPO_NAME>, then set base to '/<REPO_NAME>/'.
+  base: "/<portfolio>/", // add repository name here
 
-  base: process.env.VITE_BASE_PATH || '/deploy_react_app_github_pages_vercel',
+  // base: process.env.VITE_BASE_PATH || '/deploy_react_app_github_pages_vercel',
   plugins: [
     react(),
     VitePWA({
